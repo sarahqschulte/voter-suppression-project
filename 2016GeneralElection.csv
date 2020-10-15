@@ -1,0 +1,53 @@
+﻿State,,,Turnout Rates,,,Numerators,,Denominators,,VEP Components (Modifications to VAP to Calculate VEP),,,,,,
+State,Website,Status,VEP Total Ballots Counted,VEP Highest Office,VAP Highest Office,Total Ballots Counted (Estimate),Highest Office,Voting-Eligible Population (VEP),Voting-Age Population (VAP),% Non-citizen,Prison,Probation,Parole,Total Ineligible Felon,Overseas Eligible,State Abv
+Alabama,http://www.alabamavotes.gov/downloads/election/2016/general/2016-Official-General-Election-Results-Certified-2016-11-29.pdf,Official,59.10%,58.80%,56.30%,2134061,2123372,3609447,3770142,2.50%,28680,52177,8562,66983,,AL
+Alaska,http://www.elections.alaska.gov/results/16GENR/,Official,61.50%,61.00%,57.40%,321271,318608,522679,555367,4.10%,4317,6621,1812,9903,,AK
+Arizona,http://apps.azsos.gov/election/2016/General/Official%20Signed%20State%20Canvass.pdf,Official,56.10%,54.90%,48.90%,2661497,2604657,4740310,5331034,9.40%,37582,77373,7500,89185,,AZ
+Arkansas,http://results.enr.clarityelections.com/AR/63912/182850/Web01/en/summary.html,Official,53.20%,52.80%,49.40%,1137772,1130635,2140097,2286625,3.80%,17242,30881,23792,58636,,AR
+California,http://www.sos.ca.gov/elections/prior-elections/statewide-election-results/general-election-november-8-2016/statement-vote/,Official,58.20%,56.50%,47.00%,14610509,14181595,25104844,30201571,16.40%,130390,0,0,130390,,CA
+Colorado,http://results.enr.clarityelections.com/CO/63746/182883/Web01/en/summary.html,Official,71.90%,70.00%,64.60%,2859216,2780247,3974405,4305728,7.00%,18576,0,10186,28762,,CO
+Connecticut,http://ctemspublic.pcctg.net/#/home,Official,64.90%,63.70%,58.30%,1675955,1644920,2582761,2821935,7.80%,14475,0,3379,17854,,CT
+Delaware,http://elections.delaware.gov/results/html/election.shtml,Official,64.40%,64.20%,59.20%,445228,443814,691720,749872,5.70%,6254,15395,387,15416,,DE
+District of Columbia,https://www.dcboee.org/election_info/election_results/v3/2016/November-8-General-Election,Official,60.70%,60.40%,55.40%,312575,311268,515248,562329,8.40%,0,0,0,0,,DC
+Florida,http://enight.elections.myflorida.com/FederalOffices/Presidential/,Official,65.60%,64.50%,56.90%,9580489,9420039,14601066,16565588,10.50%,92847,214066,4566,219431,,FL
+Georgia,http://results.enr.clarityelections.com/GA/63991/182885/en/summary.html,Official,59.80%,59.10%,52.60%,4165405,4114732,6959963,7828207,7.20%,51092,410964,22386,307727,,GA
+Hawaii,http://elections.hawaii.gov/wp-content/results/histatewide.pdf,Official,43.20%,42.30%,38.30%,437664,428937,1012860,1120465,9.10%,5474,0,0,5474,,HI
+Idaho,http://www.sos.idaho.gov/elect/results/2016/General/statewide_totals.html,Official,60.90%,59.20%,55.00%,710545,690255,1166706,1253925,4.40%,7949,32409,5054,31476,,ID
+Illinois,https://www.elections.il.gov/ElectionResults.aspx?ID=vlS7uG8NT%2f0%3d,Offiical,63.10%,62.20%,56.70%,5666118,5589631,8985443,9866799,8.50%,42017,0,0,42017,,IL
+Indiana,http://www.in.gov/apps/sos/election/general/general2016,Official,57.90%,56.40%,54.00%,2807676,2734958,4849937,5063393,3.70%,24948,0,0,24948,,IN
+Iowa,https://electionresults.sos.iowa.gov/Views/TabularData.aspx?TabView=StateRaces^Federal%20/%20Statewide%20Races^86&ElectionID=86,Official,69.10%,68.40%,65.10%,1581371,1566031,2288536,2406915,3.60%,8888,29254,6051,31614,,IA
+Kansas,http://www.kssos.org/elections/16elec/2016_General_Election_Official_Results.pdf,Official,59.70%,57.70%,54.00%,1225667,1184402,2054025,2192423,5.20%,9613,16654,4830,23936,,KS
+Kentucky,http://elect.ky.gov/results/2010-2019/Documents/2016%20General%20Election%20Results.pdf,Offiical,59.60%,58.60%,56.10%,1955195,1924149,3282420,3430652,2.40%,22868,48457,15383,65871,,KY
+Louisiana,https://voterportal.sos.la.gov/Graphical,Official,60.60%,60.00%,56.80%,2049531,2029032,3384435,3571652,2.70%,35543,40174,30907,89349,,LA
+Maine,http://www.maine.gov/sos/cec/elec/results/results16-17.html#nov,Official,72.90%,70.70%,69.40%,771892,747927,1058372,1078037,1.80%,0,0,0,0,,ME
+Maryland,http://elections.maryland.gov/elections/2016/results/General/gen_results_2016_4_001-.html,Official,67.00%,66.40%,59.50%,2807322,2781446,4189616,4670900,8.80%,19382,72529,10305,71029,,MD
+Massachusetts,http://www.sec.state.ma.us/ele/elepdf/2016-Electors-Certification.pdf,Offiical,68.30%,67.20%,61.10%,3378801,3325046,4948028,5442458,8.90%,8780,0,0,8780,,MA
+Michigan,http://miboecfr.nictusa.com/election/results/2016GEN_CENR.html,Official,65.70%,64.70%,62.00%,4874619,4799284,7420628,7744567,3.70%,40502,0,0,40502,,MI
+Minnesota,http://www.sos.state.mn.us/elections-voting/2016-general-election-results/,Official,74.70%,74.10%,69.40%,2968281,2944813,3973204,4240423,4.60%,10158,96852,7075,72439,,MN
+Mississippi,http://www.sos.ms.gov/Elections-Voting/Pages/2016-General-Election.aspx,Official,,55.20%,53.30%,,1209357,2191241,2268089,1.40%,19150,29067,8645,44363,,MS
+Missouri,http://enr.sos.mo.gov/enrnet/default.aspx?eid=750003949,Official,62.20%,62.20%,59.60%,2811549,2808605,4517925,4710784,2.50%,31956,43799,17792,74713,,MO
+Montana,http://mtelectionresults.gov/,Official,64.30%,61.80%,60.80%,516901,497147,804250,817702,1.20%,3795,0,0,3795,,MT
+Nebraska,http://www.sos.ne.gov/elec/2016/pdf/2016-canvass-book.pdf,Official,64.00%,62.80%,58.80%,860573,844227,1343821,1436437,5.50%,5079,13489,1088,13856,,NE
+Nevada,http://silverstateelection.com/,Official,57.40%,57.40%,49.40%,1125429,1125385,1961587,2276281,12.60%,13742,13724,5261,26826,,NV
+New Hampshire,http://sos.nh.gov/2016GenResults.aspx,Official,72.50%,71.40%,69.10%,755850,744296,1042795,1076739,2.90%,2818,0,0,2818,,NH
+New Jersey,http://www.state.nj.us/state/elections/2016-results/2016-official-general-results-president-1206b.pdf,Official,65.80%,64.40%,55.70%,3957303,3874046,6013656,6959892,12.00%,18504,140589,15128,113768,,NJ
+New Mexico,http://electionresults.sos.state.nm.us/,Official,54.90%,54.50%,50.20%,804043,798319,1464515,1591069,6.90%,6914,12714,2780,16941,,NM
+New York,http://www.elections.ny.gov/2016ElectionResults.html,Official,57.20%,56.80%,49.60%,7786881,7721453,13604645,15557982,12.00%,46416,0,44426,90842,,NY
+North Carolina,http://er.ncsbe.gov/?election_dt=11/08/2016&county_id=0&office=FED&contest=0,Official,64.90%,64.50%,60.20%,4769640,4741564,7352501,7880013,5.50%,34357,82466,12726,94089,,NC
+North Dakota,http://results.sos.nd.gov/resultsSW.aspx?text=Race&type=SW&map=CTY,Official,61.70%,60.80%,59.30%,349945,344360,566783,581188,2.20%,1791,0,0,1791,,ND
+Ohio,https://vote.ohio.gov/,Official,64.20%,62.90%,61.00%,5607641,5496487,8736808,9007953,2.40%,51666,0,0,51666,,OH
+Oklahoma,https://www.ok.gov/elections/support/20161108_seb.html,Official,,52.30%,49.00%,,1452992,2778219,2965905,4.70%,26691,33562,1895,47716,,OK
+Oregon,http://sos.oregon.gov/elections/Documents/results/november-2016-results.pdf,Official,68.00%,66.20%,61.70%,2056310,2001336,3024174,3244277,6.30%,15166,0,0,15166,,OR
+Pennsylvania,http://www.electionreturns.pa.gov/ENR_New/General/CountyBreakDownResults?officeId=1&districtId=1&ElectionID=undefined&ElectionType=undefined&IsActive=undefined,Official,,63.60%,61.00%,,6165478,9691160,10108486,3.70%,48098,0,0,48098,,PA
+Rhode Island,http://www.ri.gov/election/results/2016/general_election/,Official,59.70%,59.10%,54.70%,469589,464144,786012,848975,7.10%,3038,0,0,3038,,RI
+South Carolina,http://www.enr-scvotes.org/SC/64658/182853/en/summary.html,Official,57.30%,56.70%,54.20%,2123584,2103027,3709283,3883145,3.40%,20350,32634,4347,43298,,SC
+South Dakota,https://sdsos.gov/elections-voting/assets/2016GeneralElectionOfficialStateCanvass.pdf,Official,60.00%,58.60%,56.60%,378995,370093,631173,653841,2.50%,3744,0,2687,6431,,SD
+Tennessee,http://sos-tn-gov-files.s3.amazonaws.com/PresidentbyCountyNov2016.pdf,Official,51.80%,51.10%,48.60%,2545271,2508027,4909426,5164969,3.50%,27906,62609,12092,75685,,TN
+Texas,http://elections.sos.state.tx.us/elchist319_state.htm,Official,51.40%,51.40%,43.40%,8975000,8969226,17448910,20671564,13.30%,155327,374285,111287,479956,,TX
+Utah,https://elections.utah.gov/election-resources/2016-election-information,Official,57.90%,56.80%,52.80%,1152369,1131430,1991885,2144784,6.90%,5846,0,0,5846,,UT
+Vermont,https://vtelectionresults.sec.state.vt.us/Index.html#/state,Official,64.80%,63.70%,62.30%,320467,315067,494871,506048,2.20%,0,0,0,0,,VT
+Virginia,http://results.elections.virginia.gov/vaelections/2016%20November%20General/Site/Presidential.html,Official,,66.10%,60.80%,,3984631,6027152,6551390,6.90%,36959,60821,1650,73277,,VA
+Washington,http://results.vote.wa.gov/results/current/,Final,65.70%,64.70%,58.30%,3363440,3317019,5123020,5691833,8.60%,18335,89317,11322,80568,,WA
+West Virginia,http://services.sos.wv.gov/apps/elections/results/,Official,,50.20%,49.20%,,714423,1423031,1453201,1.10%,7137,6523,3550,14405,,WV
+Wisconsin,http://elections.wi.gov/sites/default/files/Statewide%20Results%20All%20Offices%20%28post-Presidential%20recount%29.pdf,Official,,69.50%,66.20%,,2976150,4285071,4495783,3.20%,22889,44489,20401,68649,,WI
+Wyoming,http://soswy.state.wy.us/Elections/Docs/2016/2016GeneralResults.aspx,Official,60.20%,59.50%,57.30%,258788,255849,429682,446396,2.40%,2323,4666,842,5825,,WY
