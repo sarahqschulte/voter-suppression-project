@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+    <head>
+        <!--demonstration of using the svg 'use' element to create a pictogram-->
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+        <script src="//cdn.jsdelivr.net/jquery.ui.touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+        <style type="text/css">
+               
+            #dropdownDiv  {
+                margin:10px;
+                margin-top:10px;
+                height:15px;
+                width:350px;
+            }
+            
+            svg {
+                overflow:none;
+                padding:10px;
+                float:left;
+                width:350px;
+                height:450px;
+            }
+            
+            text    {
+                fill:rgb(45, 219, 231);
+                text-anchor:left;
+                font-size:12px;
+                font-family:sans-serif,Helvetica,Arial;
+                font-weight:bold;
+            }
+            
+            .iconPlain  {
+                fill:white;   
+            }
+            
+            .iconSelected  {
+                fill:rgb(45, 219, 231);   
+            }
+            
+            rect    {
+                fill:#151414;   
+            }
+        
+        </style>
+ 
+    </head>
+ 
+    <body>
+
+        <select name="State" id="state-dropdown" onchange="optionChanged(this.value)">
+                            <option value='United States' data-alternative-spellings='US, The United States'>All States</option>
+                            <option value="Alabama" data-alternative-spellings='AL'>Alabama</option>
+                            <option value="Alaska" data-alternative-spellings='AK'>Alaska</option>
+                            <option value="Arizona" data-alternative-spellings='AZ'>Arizona</option>
+                            <option value="Arkansas" data-alternative-spellings='AS'>Arkansas</option>
+                            <option value="California" data-alternative-spellings='CA'>California</option>
+                            <option value="Colorado" data-alternative-spellings='CO'>Colorado</option>
+                            <option value="Connecticut" data-alternative-spellings='CT'>Connecticut</option>
+                            <option value="Delaware" data-alternative-spellings='DE'>Delaware</option>
+                            <option value="Florida" data-alternative-spellings='FL'>Florida</option>
+                            <option value="Georgia" data-alternative-spellings='GA'>Georgia</option>
+                            <option value="Hawaii" data-alternative-spellings='HI'>Hawaii</option>
+                            <option value="Idaho" data-alternative-spellings='ID'>Idaho</option>
+                            <option value="Illinois" data-alternative-spellings='IL'>Illinois</option>
+                            <option value="Indiana" data-alternative-spellings='IN'>Indiana</option>
+                            <option value="Iowa" data-alternative-spellings='IA'>Iowa</option>
+                            <option value="Kansas" data-alternative-spellings='KS'>Kansas</option>
+                            <option value="Kentucky" data-alternative-spellings='KY'>Kentucky</option>
+                            <option value="Louisiana" data-alternative-spellings='LA'>Louisiana</option>
+                            <option value="Maine" data-alternative-spellings='ME'>Maine</option>
+                            <option value="Maryland" data-alternative-spellings='MD'>Maryland</option>
+                            <option value="Massachusetts" data-alternative-spellings='MA'>Massachusetts</option>
+                            <option value="Michigan" data-alternative-spellings='MI'>Michigan</option>
+                            <option value="Minnesota" data-alternative-spellings='MN'>Minnesota</option>
+                            <option value="Mississippi" data-alternative-spellings='MS'>Mississippi</option>
+                            <option value="Missouri" data-alternative-spellings='MO'>Missouri</option>
+                            <option value="Montana" data-alternative-spellings='MT'>Montana</option>
+                            <option value="Nebraska" data-alternative-spellings='NE'>Nebraska</option>
+                            <option value="Nevada" data-alternative-spellings='NV'>Nevada</option>
+                            <option value="New Hampshire" data-alternative-spellings='NH'>New Hampshire</option>
+                            <option value="New Jersey" data-alternative-spellings='NJ'>New Jersey</option>
+                            <option value="New Mexico" data-alternative-spellings='NM'>New Mexico</option>
+                            <option value="New York" data-alternative-spellings='NY'>New York</option>
+                            <option value="North Carolina" data-alternative-spellings='NC'>North Carolina</option>
+                            <option value="North Dakota" data-alternative-spellings='ND'>North Dakota</option>
+                            <option value="Ohio" data-alternative-spellings='OH'>Ohio</option>
+                            <option value="Oklahoma" data-alternative-spellings='OK'>Oklahoma</option>
+                            <option value="Oregon" data-alternative-spellings='OR'>Oregon</option>
+                            <option value="Pennsylvania" data-alternative-spellings='PA'>Pennsylvania</option>
+                            <option value="Rhode Island" data-alternative-spellings='RI'>Rhode Island</option>
+                            <option value="South Carolina" data-alternative-spellings='SC'>South Carolina</option>
+                            <option value="South Dakota" data-alternative-spellings='SD'>South Dakota</option>
+                            <option value="Tennessee" data-alternative-spellings='TN'>Tennessee</option>
+                            <option value="Texas" data-alternative-spellings='TX'>Texas</option>
+                            <option value="Utah" data-alternative-spellings='UT'>Utah</option>
+                            <option value="Vermont" data-alternative-spellings='VT'>Vermont</option>
+                            <option value="Virginia" data-alternative-spellings='VA'>Virginia</option>
+                            <option value="Washington" data-alternative-spellings='WA'>Washington</option>
+                            <option value="West Virginia" data-alternative-spellings='WV'>West Virginia</option>
+                            <option value="Wisconsin" data-alternative-spellings='WI'>Wisconsin</option>
+                            <option value="Wyoming" data-alternative-spellings='WY'>Wyoming</option>
+          </select>
+ 
+        <script>
+            var optionChanged = function(){};
+            //placeholder div for jquery slider
+            d3.select("body").append("div").attr("id","dropdownDiv");
+            
+            //create svg element
+            var svgDoc=d3.select("body").append("svg").attr("viewBox","0 0 100 150");
+            
+             //define an icon store it in svg <defs> elements as a reusable component - this geometry can be generated from Inkscape, Illustrator or similar
+            svgDoc.append("defs")
+                .append("g")
+                .attr("id","iconCustom")
+                .append("path")
+                        .attr("d","M3.5,2H2.7C3,1.8,3.3,1.5,3.3,1.1c0-0.6-0.4-1-1-1c-0.6,0-1,0.4-1,1c0,0.4,0.2,0.7,0.6,0.9H1.1C0.7,2,0.4,2.3,0.4,2.6v1.9c0,0.3,0.3,0.6,0.6,0.6h0.2c0,0,0,0.1,0,0.1v1.9c0,0.3,0.2,0.6,0.3,0.6h1.3c0.2,0,0.3-0.3,0.3-0.6V5.3c0,0,0-0.1,0-0.1h0.2c0.3,0,0.6-0.3,0.6-0.6V2.6C4.1,2.3,3.8,2,3.5,2z");
+            
+            
+            //background rectangle
+            svgDoc.append("rect").attr("width",150).attr("height",110);
+            
+            //specify the number of columns and rows for pictogram layout
+            var numCols = 10;
+            var numRows = 10;
+            
+            //padding for the grid
+            var xPadding = 10;
+            var yPadding = 15;
+            
+            //horizontal and vertical spacing between the icons
+            var hBuffer = 9;
+            var wBuffer = 8;
+            
+            //generate a d3 range for the total number of required elements
+            var myIndex=d3.range(numCols*numRows);
+            
+            //text element to display number of icons highlighted
+            svgDoc.append("text")
+                .attr("id","txtValue")
+                .attr("x",xPadding)
+                .attr("y",yPadding)
+                .attr("dy",-3)
+                .text("0"+"%");
+
+ 
+            //create group element and create an svg <use> element for each icon
+            svgDoc.append("g")
+                .attr("id","pictoLayer")
+                .selectAll("use")
+                .data(myIndex)
+                .enter()
+                .append("use")
+                    .attr("xlink:href","#iconCustom")
+                    .attr("id",function(d)    {
+                        return "icon"+d;
+                    })
+                    .attr("x",function(d) {
+                        var remainder=d % numCols;//calculates the x position (column number) using modulus
+                        return xPadding+(remainder*wBuffer);//apply the buffer and return value
+                    })
+                      .attr("y",function(d) {
+                        var whole=Math.floor(d/numCols)//calculates the y position (row number)
+                        return yPadding+(whole*hBuffer);//apply the buffer and return the value
+                    })
+                    .classed("iconPlain",true);
+
+                    
+            var votingData = "voting2018.json";
+           // function optionChanged(value){
+            d3.select('select').on('change',function(){
+                    d3.json(votingData).then(function(data){
+                        console.log(data)
+                        state = d3.select('#state-dropdown').node().value
+                        console.log(state)
+                        stateData = data.filter(c => c.State==state)
+                        console.log(stateData)
+                        uneligiblePer = Math.floor(stateData[0].uneligiblePercent)
+                        console.log(uneligiblePer)
+                        if(state == "New Jersey"){
+                            d3.select("#txtValue").text("NJ - " + uneligiblePer+'%')
+                        }
+                        else if(state == "New Hampshire"){
+                            d3.select("#txtValue").text("NH - " + uneligiblePer+'%')
+                        }
+                        else if(state == "Massachusetts"){
+                            d3.select("#txtValue").text("MA - " + uneligiblePer+'%')
+                        }
+                        else{
+                        d3.select("#txtValue").text(state+ " - " + uneligiblePer+'%')}
+                        d3.selectAll("use").attr("class",function(d,i){
+                            if (d<uneligiblePer){
+                                return "iconSelected"
+                            }
+                            else {
+                                return "iconPlain"
+                            }
+                        })
+
+                    })
+               })
+
+               d3.json(votingData).then(function(data){
+                        console.log(data)
+                        state = d3.select('#state-dropdown').node().value
+                        console.log(state)
+                        stateData = data.filter(c => c.State==state)
+                        console.log(stateData)
+                        uneligiblePer = Math.floor(stateData[0].uneligiblePercent)
+                        console.log(uneligiblePer)
+                        if(state == "New Jersey"){
+                            d3.select("#txtValue").text("NJ - " + uneligiblePer+'%')
+                        }
+                        else if(state == "United States"){
+                            d3.select("#txtValue").text("USA - " + uneligiblePer+'%')
+                        }
+                        else if(state == "New Hampshire"){
+                            d3.select("#txtValue").text("NH - " + uneligiblePer+'%')
+                        }
+                        else if(state == "Massachusetts"){
+                            d3.select("#txtValue").text("MA - " + uneligiblePer+'%')
+                        }
+                        else{
+                        d3.select("#txtValue").text(state+ " - " + uneligiblePer+'%')}
+                        d3.selectAll("use").attr("class",function(d,i){
+                            if (d<uneligiblePer){
+                                return "iconSelected"
+                            }
+                            else {
+                                return "iconPlain"
+                            }
+                        })
+
+                    })
+        </script>
+    </body>
+</html>
