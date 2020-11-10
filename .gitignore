@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 # Blocking sensitive info
 config.py
+credentials.json
